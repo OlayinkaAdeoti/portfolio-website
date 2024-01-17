@@ -1,0 +1,414 @@
+ * {
+    padding: 0;
+    margin: 0;
+ }
+ body {
+    background-color: rgb(241,241,241);
+    background-size: cover;
+    background-position: center;
+ }
+ header div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(241,241,241);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    right: 0;
+}
+.img-1 {
+    width: 6%;
+    margin-left: 60px;
+}
+.nav-menu {
+    flex: 1;
+    text-align: right;
+}
+.nav-menu ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 50px;
+}
+.nav-menu ul li a {
+    text-decoration: none;
+    color: brown;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: arial;
+    padding: 20px 30px;
+    border-radius: 20px 30px;
+}
+.nav-menu ul li a:hover {
+    color: rgb(95, 95, 150);
+    opacity: 0.8;
+    background-color: burlywood;
+}
+.hamburger-menu {
+    border-style: none;
+    cursor: pointer;
+    display: none;
+}
+.second-sec  {
+    text-align: center;
+    width: 100%;
+    background-image: url(./images/construction-engineer.jpg);
+    background-size: cover;
+    background-position: center;
+    animation: changeImage 20s infinite; 
+    min-height: 80vh;
+    margin-top: 7rem;
+  }
+  .second-sec h2 {
+    padding-top: 15rem;
+    font-weight: bold;
+    font-size: 7rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .second-sec p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 40px;
+  }
+  .button1 ,
+  .second-div button {
+    padding: 15px 35px;
+    font-size: 20px;
+    font-family: arial;
+    font-weight: bold;
+    border-radius: 2rem;
+    text-decoration: none;
+    border-color: brown;
+    border-style: groove;
+    cursor: pointer;
+    color: white;
+    box-shadow: 5px 5px 15px 0px rgba(204, 196, 196, 0.75);
+  }
+  .button1:hover {
+    opacity: 0.4;
+    color: rgb(128, 128, 97);
+  }
+  @keyframes changeImage {
+    0%, 100% {
+      background-image: url('./images/construction-engineer.jpg');
+    }
+    25% {
+      background-image: url('./images/building-new-concrete-houses.jpg');
+    }
+    50% {
+      background-image: url('./images/worker-checking-structure.jpg');
+    }
+    75% {
+      background-image: url('./images/happy-african-american-lady-safety-helmet-writing-notebook-near-building-construction.jpg');
+    }
+  }
+  .image-position {
+    width: 100%;
+    width: 40vw;
+    position: absolute;
+    right: 8rem;
+    top: 66rem;
+    height: 80%;
+  }
+  @media only screen and (max-width: 450px){
+    header div{
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .img-1 {
+      width: 10%;
+      margin: 0;
+      margin-left: 30px;
+      min-height: 10vh;
+     }
+     .nav-menu {
+      display: none;
+     }
+     button {
+      border: none;
+     }
+     .hamburger-menu {
+      display: block;
+      padding: 0;
+      margin: 0;
+      min-height: 4vh;
+      border-bottom: none;
+      margin-right: 2rem;
+     }
+
+     .second-sec  {
+      max-width: 100%;
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+     }
+     .second-sec h2 {
+      text-align: center;
+      font-size: 4rem;
+     }
+
+  }
+  .about {
+    background-color: brown;
+    padding: 10rem 5rem;
+    padding-right: 20rem;
+    margin-top: 7rem;
+    margin-left: 1rem;
+    justify-items: center;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 2rem;
+  }
+  .about p {
+    color: white;
+    line-height: 4rem;
+    font-size: 1.6rem;
+    width: 40%;
+  }
+  .about h2 {
+    font-size: 5rem;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  .Services {
+    text-align: center;
+    margin: 8rem 0rem;
+    font-size: 5rem;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(61, 41, 41);
+  } 
+  .first-img {
+    width: 80%;
+    border-radius: 2rem;
+  }
+  hr {
+    height: 2px;
+    width: 80%;
+    background-color: rgb(138, 84, 84);
+  }
+  .grid-sec {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+  .grid-sec div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h3 {
+    font-size: 2rem;
+     font-family: 'Roboto', sans-serif;
+  }
+  .c-l {
+    font-size: 1.2rem;
+    text-align: left;
+    width: 80%;
+  }
+  .service-button {
+    color: brown;
+    text-decoration: none;
+  }
+  .service-button:hover {
+    opacity: 0.4;
+    color: rgb(128, 128, 97);
+  }
+  
+
+
+
+
+
+
+  /* other-pages */
+  .other-page {
+    background-color: white;
+  }
+  .second {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 9rem;
+    text-align: center;
+  }
+  .image-1 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .first-div {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin-bottom: 2rem;
+    width: 50%;
+    color: rgb(126, 80, 80);
+    text-align: left;
+    align-items: center;
+  }
+  
+  .sec-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%; 
+    margin: 0.5rem 2rem;
+    background-color: rgb(241,241,241);
+    padding: 4rem 3rem;
+    align-items: center;
+    border-radius: 3rem;
+    box-shadow: 2px 2px 10px 1px  rgb(119, 111, 111);
+  }
+  .con-text {
+    width: 100%;
+    font-size: 20px;
+    color: rgb(126, 80, 80);
+    font-family: 'Roboto', sans-serif;
+    text-align: start;
+  }
+  .con-text strong {
+    text-align: center;
+  }
+  .second-div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+    align-items: center;
+    justify-items: center;
+  
+  }
+  .last-note {
+    font-size: 20px;
+    color: rgb(126, 80, 80);
+    text-align: left;
+  }
+  .foot {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: brown;
+    justify-items: center;
+    width: 100%;
+    align-items: top;
+    padding: 6rem 0rem;
+    margin-top: 7rem;
+  }
+  .drop {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .drop h2 {
+    margin-bottom: 1rem;
+    font-size: 35px;
+  }
+  .drop p {
+    margin-bottom: 10px;
+  }
+  .drop-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .drop-3 p{
+    font-size: 25px;
+    color: white;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .drop-3 input {
+    padding: 0.8rem 1rem;
+    font-size: 20px;
+    text-align: start;
+    margin-right: 5px;
+  }
+  .drop-3 input:focus {
+    outline: none;
+  }
+  .drop-3 button {
+    padding: 0.8rem 1rem;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  @media only screen and (max-width: 450px){
+    .about p{
+      width: 100%;
+      font-size: 20px;
+      padding: 0;
+      margin: 0;
+      line-height: 3rem;
+     }
+     .about {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      margin: 3rem 1rem;
+      padding: 4rem 1rem;
+      padding-bottom: 25rem;
+     }
+     .about h2 {
+      font-size: 40px;
+     }
+     .image-position {
+      width: 80%;
+      height: 40%;
+      left: 2.5rem;
+      position: absolute;
+      top: 98rem;
+     }
+    .grid-sec {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+     }
+     .grid-sec div {
+      margin-bottom: 2rem;
+     }
+     .foot {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: space-between;
+     }
+     .drop {
+      margin-bottom: 2rem;
+      margin-left: 1rem;
+     }
+     .drop-3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 1rem;
+     }
+     .drop-3 button {
+     padding: 0.5rem;
+     margin-top: 1rem;
+     border-radius: 1rem;
+     }
+     .first-div p {
+      width: 100%;
+      min-width: 100%;
+     }
+     .second {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     }
+     .second-div {
+      display: flex;
+      flex-direction: column;
+     }
+     .sec-div {
+      border-radius: 2rem;
+     }
+  }
