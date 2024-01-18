@@ -53,7 +53,7 @@
 .second-sec  {
     text-align: center;
     width: 100%;
-    background-image: url(./images/construction-engineer.jpg);
+    background-image: url(/kabmod-project/style/images/construction-engineer.jpg);
     background-size: cover;
     background-position: center;
     animation: changeImage 20s infinite; 
@@ -93,16 +93,16 @@
   }
   @keyframes changeImage {
     0%, 100% {
-      background-image: url('./images/construction-engineer.jpg');
+      background-image: url('/kabmod-project/style/images/construction-engineer.jpg');
     }
     25% {
-      background-image: url('./images/building-new-concrete-houses.jpg');
+      background-image: url('/kabmod-project/style/images/building.jpg');
     }
     50% {
-      background-image: url('./images/worker-checking-structure.jpg');
+      background-image: url('/kabmod-project/style/images/worker-checking.jpg');
     }
     75% {
-      background-image: url('./images/happy-african-american-lady-safety-helmet-writing-notebook-near-building-construction.jpg');
+      background-image: url('/kabmod-project/style/images/happy.afriacn.jpg');
     }
   }
   .image-position {
@@ -285,6 +285,10 @@
     align-items: center;
     justify-items: center;
   
+  }
+  .second-div button a{
+    color: rgb(184, 93, 93);
+    text-decoration: none;
   }
   .last-note {
     font-size: 20px;
